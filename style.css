@@ -1,0 +1,478 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* hum-menu */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+  }
+
+  .navigation.active {
+    display: flex;
+    z-index: 999;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* End ham-menu */
+/* header {
+  background-color: #f0f0f0;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+}
+.logo {
+  text-decoration: none;
+  color: darkslateblue;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
+.navigation a {
+  color: rgb(25, 18, 72);
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding-left: 30px;
+}
+.navigation :hover {
+  color: rgb(103, 103, 240);
+} */
+section {
+  padding: 100px 200px;
+}
+.main1 {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(images/emile-perron-xrVDYZRGdw4-unsplash.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.main1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  /* background-color: rgb(227, 140, 0); */
+  opacity: 0.7;
+  z-index: -1;
+}
+/* .main1 .head h1 {
+  color: darkslateblue;
+} */
+
+.main1 h1 {
+  display: block;
+  width: fit-content;
+  font-size: 2.8em;
+  font-weight: 600;
+  position: relative;
+  color: transparent;
+  animation: text_reveal 3s ease forwards;
+  animation-delay: 1s;
+}
+.main1 h1:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.main1 h1:nth-child(2) {
+  animation-delay: 2s;
+}
+
+/* .main1 h1:nth-child(3) {
+  animation: text_reveal_name 0.5s ease forwards;
+  animation-delay: 3s;
+} */
+
+.main1 h1:nth-child(1) span {
+  animation-delay: 0.5s;
+}
+
+.main1 h1:nth-child(2) span {
+  animation-delay: 1.5s;
+}
+
+/* .main1 h1:nth-child(3) span {
+  animation-delay: 2.5s;
+} */
+
+.main1 h1 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: darkslateblue;
+  animation: text_reveal_box 1s ease;
+  animation-delay: 0.3s;
+}
+.main-btn {
+  display: inline-block;
+
+  color: aqua;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  padding: 0.9375em 2.1875em;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  margin-top: 8px;
+  transition: 0.7s ease;
+}
+.main-btn:hover {
+  background-color: darkslateblue;
+  transform: scale(1.1);
+}
+
+/* End Hero Section */
+
+/* media Frames */
+@keyframes text_reveal_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes text_reveal {
+  100% {
+    color: rgb(219, 236, 237);
+  }
+}
+@keyframes text_reveal_name {
+  100% {
+    color: rgb(137, 193, 195);
+    font-weight: 500;
+  }
+}
+
+/* End media Frames */
+
+.social-icons a {
+  /* color: aqua; */
+  font-size: 1.8em;
+  padding-right: 30px;
+}
+
+/* New about me */
+
+.about {
+  padding: 100px 20px;
+  background-color: #f9f9f9;
+}
+
+.about-text {
+  max-width: 800px;
+  margin: auto;
+}
+
+.about-text h2 {
+  color: darkslateblue;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.about-text h2 span {
+  color: #555;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* end about me */
+
+/* Skills section styles */
+
+.bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.info {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .navigation a {
+    margin: 10px 0;
+  }
+
+  header {
+    padding: 20px 10px;
+  }
+
+  .main1,
+  .about,
+  .skills {
+    padding: 50px 10px;
+  }
+
+  .main1 h1 {
+    font-size: 2rem;
+  }
+
+  .about-text {
+    padding: 0 10px;
+  }
+
+  .about-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Skills */
+.title {
+  display: flex;
+  justify-content: center;
+  color: darkslateblue;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.container section {
+  width: 100%;
+  min-height: 100vh;
+  background: url(images/christopher-gower-m_HRfLhgABo-unsplash.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #f0f0f0;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 25px;
+  transition: 0.7s ease;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.icon {
+  color: darkslateblue;
+
+  /* color: #555; */
+  font-size: 5em;
+  text-align: center;
+}
+.info {
+  text-align: center;
+}
+.info h3 {
+  color: #f9004d;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+/* Responsive Styles */
+/* @media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 70%;
+    max-width: 150px;
+    margin: 15px;
+  }
+} */
+/* End Skills */
+
+/*  project */
+
+.projects {
+  background-color: #fff7f1;
+}
+.projects .content {
+  margin-top: 30px;
+}
+.projects-card {
+  background-color: #f0f0f0;
+  border: 5px solid #ca9595;
+  min-height: 14em;
+  width: 19em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.7s ease;
+}
+.projects-card:hover {
+  transform: scale(1.1);
+}
+.projects-image img {
+  width: 100%;
+  height: 200px;
+}
+.projects-card:hover .projects-image {
+  opacity: 0.9;
+}
+.projects-info {
+  padding: 1em;
+}
+.projects-category {
+  font-size: 1.5em;
+  color: darkslateblue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.projects-title {
+  display: flex;
+  justify-content: flex-end;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.more-details {
+  text-decoration: none;
+  color: rgb(205, 114, 199);
+}
+.more-details:hover {
+  color: blueviolet;
+}
+/* End project */
+
+@media (max-width: 1023px) {
+  /* header {
+    padding: 12px 20px;
+  } */
+  .navigation a {
+    padding-left: 10px;
+  }
+  .title {
+    font-size: 1.8em;
+  }
+  section {
+    padding: 80px 20px;
+  }
+}
+@media (max-width: 641px) {
+  body {
+    font-size: 12px;
+  }
+}
