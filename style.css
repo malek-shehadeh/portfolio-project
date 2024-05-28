@@ -7,7 +7,6 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-/* hum-menu */
 * {
   margin: 0;
   padding: 0;
@@ -55,6 +54,7 @@ header {
   background-color: #575757;
   border-radius: 5px;
 }
+/* hum-menu */
 
 .hamburger {
   display: none;
@@ -69,6 +69,7 @@ header {
   margin: 4px 0;
   transition: 0.3s;
 }
+/* End hum-menu */
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -88,37 +89,8 @@ header {
     display: flex;
   }
 }
+/* End Responsive Styles */
 
-/* End ham-menu */
-/* header {
-  background-color: #f0f0f0;
-  width: 100%;
-  position: fixed;
-  z-index: 999;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 200px;
-}
-.logo {
-  text-decoration: none;
-  color: darkslateblue;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.8em;
-  cursor: pointer;
-}
-
-.navigation a {
-  color: rgb(25, 18, 72);
-  text-decoration: none;
-  font-size: 1.1em;
-  font-weight: 500;
-  padding-left: 30px;
-}
-.navigation :hover {
-  color: rgb(103, 103, 240);
-} */
 section {
   padding: 100px 200px;
 }
@@ -141,13 +113,9 @@ section {
   top: 0;
   height: 100%;
   width: 100%;
-  /* background-color: rgb(227, 140, 0); */
   opacity: 0.7;
   z-index: -1;
 }
-/* .main1 .head h1 {
-  color: darkslateblue;
-} */
 
 .main1 h1 {
   display: block;
@@ -167,11 +135,6 @@ section {
   animation-delay: 2s;
 }
 
-/* .main1 h1:nth-child(3) {
-  animation: text_reveal_name 0.5s ease forwards;
-  animation-delay: 3s;
-} */
-
 .main1 h1:nth-child(1) span {
   animation-delay: 0.5s;
 }
@@ -179,10 +142,6 @@ section {
 .main1 h1:nth-child(2) span {
   animation-delay: 1.5s;
 }
-
-/* .main1 h1:nth-child(3) span {
-  animation-delay: 2.5s;
-} */
 
 .main1 h1 span {
   position: absolute;
@@ -196,7 +155,6 @@ section {
 }
 .main-btn {
   display: inline-block;
-
   color: aqua;
   background-color: transparent;
   text-decoration: none;
@@ -242,12 +200,12 @@ section {
 /* End media Frames */
 
 .social-icons a {
-  /* color: aqua; */
+  color: aqua;
   font-size: 1.8em;
   padding-right: 30px;
 }
 
-/* New about me */
+/* about me */
 
 .about {
   padding: 100px 20px;
@@ -277,8 +235,6 @@ section {
 }
 
 /* end about me */
-
-/* Skills section styles */
 
 .bar {
   display: flex;
@@ -389,19 +345,6 @@ section {
   margin: 10px;
 }
 
-/* Responsive Styles */
-/* @media (max-width: 768px) {
-  .content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    width: 70%;
-    max-width: 150px;
-    margin: 15px;
-  }
-} */
 /* End Skills */
 
 /*  project */
@@ -457,10 +400,9 @@ section {
 }
 /* End project */
 
+/* Responsive Styles */
+
 @media (max-width: 1023px) {
-  /* header {
-    padding: 12px 20px;
-  } */
   .navigation a {
     padding-left: 10px;
   }
@@ -476,3 +418,4 @@ section {
     font-size: 12px;
   }
 }
+/* End Responsive Styles */
